@@ -358,7 +358,7 @@ namespace Managment_System.Controllers
             var info = await Authentication.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                return InternalServerError();
+                //return InternalServerError();
             }
 
             var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
